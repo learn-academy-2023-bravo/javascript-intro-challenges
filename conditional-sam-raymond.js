@@ -63,7 +63,7 @@ if(num3 === 0){
 else if(num3 % 2 === 0){
     console.log("even")
 }
-else if(num3 % 2 === 1){
+else{
     console.log("odd")
 }
 
@@ -89,7 +89,7 @@ if (grade === 100) {
 
 // Write a statement that takes a variable of a boolean, number, or string data type and logs the data type of the variable. HINT: Check out the JavaScript typeof operator.
 
-let any = 5
+let any = true
 
 switch (typeof any) {
     case 'string':
@@ -102,6 +102,12 @@ switch (typeof any) {
         console.log("number")
         break;
 }
+
+//alternate implementation
+if(typeof any === "string" || typeof any === "boolean" ||typeof any === "number"){
+    console.log(typeof any)
+}
+
 
 // Create a password checker using a single conditional statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
 
