@@ -23,3 +23,20 @@ console.log (word [0] === "l")
 //output: false
 console.log (word [0] === "L")
 //output: true
+
+
+
+let item = 100
+if (item <= 100){console.log ("In Budget")}
+
+let hungry = "eat food"
+let other = "Keep coding"
+if (hungry === "eat food"){console.log (hungry)}
+else console.log (other) 
+
+
+
+
+
+
+
