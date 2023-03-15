@@ -2,6 +2,13 @@
 
 This repository holds the vanilla JavaScript pair programming challenges for the 2023 Bravo cohort.
 
+### Syllabus References  
+
+- [Collaborative Coding](https://github.com/learn-academy-2023-bravo/Syllabus/blob/main/github/pairing-with-github.md)  
+
+- *Starting at Step 7* of [GitHub](https://github.com/learn-academy-2023-bravo/Syllabus/blob/main/github/github.md)  
+
+
 ### Process Notes
 
 - Anything wrapped in `< >` is an indication that this will be named uniquely, the `< >` are NOT included in the command
@@ -74,8 +81,9 @@ Use these commands if the repo you are working on has a branch remotely that is 
 - $ `git fetch origin <branch-name>`
 - $ `git checkout <branch-name>`
 
-Use this command if the repo you are working on has a branch remotely that ***is on your local machine but DON'T have the latest version of the code from GitHub***:
+Use this command if the repo you are working on has a branch remotely that ***is on your local machine but you DON'T have the latest version of the code from GitHub***:
 - $ `git pull origin <branch-name>`
+
 
 ### Pushing Local Code to GitHub
 
@@ -87,16 +95,28 @@ Use these commands to add the code you have on your local machine to GitHub:
 - $ `git push origin <branch-name>`
 
 
-### Deleting a Branch on GitHub
+### Merging Code to Main Branch Remotely
+When you have completed work or you have been informed to start the next challenge, push local code to GitHub then follow the prompts on GitHub to create a pull request (PR)
 
-Branches exist on your local machine and on the remote. Always delete your branch in both places.
+> Click the compare & pull request button
+![PR-Prompt](./assets/pr-prompt.png)
+> Click the create pull request button
+![Create-PR](./assets/create-pr.png)
+> Click the merge pull request button
+![Merge-PR](./assets/merge-pr.png)
+> Click the confirm merge button
+![Confirm-Merge](./assets/confirm-merge.png)
+> Click the delete branch button to remove the stale branch
+![Delete-Branch](./assets/delete-branch.png)
 
-- Branches in GitHub can be deleted via the GUI
 
+### Deleting a Branch Locally
 
-### Deleting a Branch on Local
+Branches exist on your local machine and on the remote. Always delete your stale branch in both places.  
 
-Branches exist on your local and on the remote. Always delete your branch in both places.
+You cannot delete a branch if you are on.
+
+Delete the local stale branch after ensuring that your local main branch matches the changes you have added to your remote main branch.
 
 - $ `git checkout main`
 - $ `git pull origin main`
