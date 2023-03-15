@@ -19,21 +19,30 @@ console.log("LEARN".length === 5 && "Student".length === 7) // True
 console.log("LEARN".length === 5 || "Student".length === 10) // True
 
 // Does "LEARN" contain the subset "RN"?
+console.log("LEARN".includes("RN")) //True
 
 
 // Does "LEARN" contain the subset "rn"?
-
+console.log("LEARN".includes("rn")) //False
 
 // Does "LEARN"[0] strictly equal "l"?
-
+console.log ("LEARN"[0] === "l")  //False
 
 // Modify the code from the previous question to return true.
+console.log ("LEARN"[0] === "L")  //True
+
 
 // Make sure you try different options and change the variables to ensure properly working code.
 
 // Write a statement that takes a variable of item and logs "in budget" if a price is $100 or less.
+let shovel = 100
+if (shovel <= 100) {
+    console.log("in budget")
+}
 
 // Write a statement that takes a variable of hungry and logs "eat food" if you are hungry and "keep coding" if you are not hungry.
+let hungry = "eat food"
+if (hungry ===)
 
 // Write a statement that takes a variable of trafficLight and logs "go" if the light is green, "slow down" if the light is yellow and "stop" if the light is red.
 
