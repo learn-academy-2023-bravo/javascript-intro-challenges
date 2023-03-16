@@ -51,29 +51,63 @@ console.log(numbers.reverse().concat(0).reverse())
 
 
 // var numSet = [2, 13, 6, 8, 4, 2]
+
+let numSet = [2, 13, 6, 8, 4, 2]
+
 // Write the code that finds the index of the first appearance of the number 2.
+
+console.log(numSet.indexOf(2))
 
 // Write the code that finds the index of the last appearance of the number 2.
 
+console.log(numSet.lastIndexOf(2))
+
 // Write the code that returns the number at the third index.
+
+console.log(numSet[3])
 
 // Consider the variable:
 
 
 
 // var characters = ["y", "a", "r", "r", "a"]
+
+let characters = ["y", "a", "r", "r", "a"]
+
 // Write the code that brings all the letters in the characters array together into a string.
+
+console.log(characters.join())
 
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
 
+let charsReversed = characters.reverse()
+console.log(charsReversed)
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
+
+console.log(charsReversed.join("*"))
+
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
+
+console.log(charsReversed.join(""))
 // Create two arrays consisting of three first names of your cohort members in each.
+
+let arrayName1 = ["Sam", "Mark", "Trish"]
+let arrayName2 = ["Wagner", "Raymond", "Felix"]
+
+console.log(arrayName1, arrayName2)
 
 // Write the code that sorts the names in alphabetical order.
 
+arrayName1.sort()
+arrayName2.sort()
+console.log(arrayName1, arrayName2)
+
+
 // Write the code that sorts the names in reverse alphabetical order.
 
+arrayName1.reverse()
+arrayName2.reverse()
+console.log(arrayName1, arrayName2)
 // Write the code that sorts all the names in alphabetical order in a single array.
 
 // Consider the variables:
