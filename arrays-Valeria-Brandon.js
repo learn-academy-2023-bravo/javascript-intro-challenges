@@ -41,17 +41,38 @@ console.log(numSet[3])
 var characters = ["y", "a", "r", "r", "a"]
 // Write the code that brings all the letters in the characters array together into a string.
 
+console.log(characters.join(""))
+
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
 
+let charsReversed = characters.reverse()
+console.log(charsReversed)
+
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
+
+console.log(charsReversed.join("*"))
+
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
+
+console.log(charsReversed.join(""))
+
 // Create two arrays consisting of three first names of your cohort members in each.
+
+let names1 = ['apple' , 'dre' , 'brandon']
+let names2 = ['jake' , 'mark' , 'nikki']
 
 // Write the code that sorts the names in alphabetical order.
 
+console.log(names1.sort(), names2.sort())
+
 // Write the code that sorts the names in reverse alphabetical order.
 
+console.log(names1.reverse(), names2.reverse())
+
 // Write the code that sorts all the names in alphabetical order in a single array.
+
+let allNames = names1.concat(names2)
+console.log(allNames.sort())
 
 
 
@@ -60,4 +81,7 @@ var oddIndexes = []
 
 // Write the code that logs the values from the numbers array that are at odd indexes.
 
+console.log(numbers[1], numbers[3], numbers[5])
+
 // Write the code that adds the values from odd indexes into the oddIndexes array
+
