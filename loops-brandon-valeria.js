@@ -50,8 +50,8 @@ const nums = [3, 57, -9, 20, 67]
 // }
 
 // Create the code that will log the remainder of each number when divided by 2. Expected output: 1, 1, -1, 0, 1
-// for (i = 0 ; i < nums.length; i++){
-//      console.log(nums[i]%2)
+ for (i = 0 ; i < nums.length; i++){
+console.log(nums[i]%2)
 //     }
 
 
