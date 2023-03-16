@@ -27,11 +27,24 @@ console.log(groceryList3)
 // var numbers = [2, 4, 6, 8, 10]
 // Write the code that will add the number 0 to the beginning of the array.
 
+let numbers = [2, 4, 6, 8, 10]
+numbers.reverse().push(0)
+numbers.reverse()
+console.log(numbers)
+
 // Write the code that will add the number 12 to the end of the array.
+
+numbers.push(12)
+console.log(numbers)
 
 // Write the code that will remove the first number from the array.
 
+numbers.shift()
+console.log(numbers)
+
 // Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
+
+console.log(numbers.reverse().concat(0).reverse())
 
 // Consider the variable:
 
