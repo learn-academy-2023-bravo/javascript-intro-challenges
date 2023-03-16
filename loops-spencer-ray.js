@@ -52,16 +52,17 @@
 
 // Create the code that will log the number of times the letter "e" occurs in the string.
 const myString = "learn student"
-let e = 0
-for(let i = 0; i < myString.length; i++){
-if(myString[i] = e){
-    e++
-}
-}
-console.log(e)
-
-
-
-
+// let e = 0
+// for(let i = 0; i < myString.length; i++){
+// if(myString[i] === "e"){
+//     e+= 1
+// }
+// }
+// console.log(e)
 
 // Create the code that will log every other character in the string.
+
+for(let i = 0; i < myString.length; i+= 2){
+console.log(myString[i])
+}
+
