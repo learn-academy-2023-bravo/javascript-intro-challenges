@@ -45,3 +45,18 @@ console.log( shiftTest)
 let newNumbers = [0].concat(numbers)
 console.log(newNumbers)
 console.log(numbers)
+
+
+var characters = ["y", "a", "r", "r", "a"]
+// Write the code that brings all the letters in the characters array together into a string.
+console.log(characters.join(""))
+
+// Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
+var charsReversed = characters.reverse()
+console.log(charsReversed)
+
+// Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
+console.log(charsReversed.join("*"))
+
+// Write the code that brings all the letters in the charsReversed array together into a string without separators.
+console.log(charsReversed.join(""))
