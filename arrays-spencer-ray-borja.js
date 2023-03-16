@@ -22,41 +22,62 @@
 // slicedGroceryList.push("beans")
 // console.log(slicedGroceryList)
 
-var numbers = [2, 4, 6, 8, 10]
+// var numbers = [2, 4, 6, 8, 10]
 
 // Write the code that will add the number 0 to the beginning of the array.
 
-numbers.unshift(0)
-console.log("unshift to add 0 to the be at the beginning ofr hte array:", numbers)
+// numbers.unshift(0)
+// console.log("unshift to add 0 to the be at the beginning ofr hte array:", numbers)
 
 // Write the code that will add the number 12 to the end of the array.
 
-numbers.push(12)
-console.log("push 12 to end of the array:", numbers)
+// numbers.push(12)
+// console.log("push 12 to end of the array:", numbers)
 
 // Write the code that will remove the first number from the array.
 
-let shiftTest = numbers.shift()
-console.log("removing the first number from the array (original array):", numbers)
-console.log( shiftTest)
+// let shiftTest = numbers.shift()
+// console.log("removing the first number from the array (original array):", numbers)
+// console.log( shiftTest)
 
 // Write the code that will add the number 0 to the beginning of the array without altering the original array. HINT: it's not .unshift You'll have to get creative! ;)
 
-let newNumbers = [0].concat(numbers)
-console.log(newNumbers)
-console.log(numbers)
+// let newNumbers = [0].concat(numbers)
+// console.log(newNumbers)
+// console.log(numbers)
 
 
-var characters = ["y", "a", "r", "r", "a"]
+// var characters = ["y", "a", "r", "r", "a"]
 // Write the code that brings all the letters in the characters array together into a string.
-console.log(characters.join(""))
+// console.log(characters.join(""))
 
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
-var charsReversed = characters.reverse()
-console.log(charsReversed)
+// var charsReversed = characters.reverse()
+// console.log(charsReversed)
 
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
-console.log(charsReversed.join("*"))
+// console.log(charsReversed.join("*"))
 
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
-console.log(charsReversed.join(""))
+// console.log(charsReversed.join(""))
+
+//  two arrays consisting of three first names of your cohort members in each.
+// let cohortMembers = ["Brandon", "Felix", "Borja"]
+// let cohortMembers2 = ["Valeria", "Jose", "Spencer"]
+
+// Write the code that sorts the names in alphabetical order.
+// cohortMembers.sort()
+// console.log(cohortMembers)
+
+// cohortMembers2.sort()
+// console.log(cohortMembers2)
+
+// Write the code that sorts the names in reverse alphabetical order.
+// cohortMembers.reverse()
+// cohortMembers2.reverse()
+// console.log(cohortMembers, cohortMembers2)
+
+// Write the code that sorts all the names in alphabetical order in a single array.
+// let combinedCohort = cohortMembers.concat(cohortMembers2)
+// console.log(combinedCohort.sort())
+
