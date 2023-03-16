@@ -40,9 +40,24 @@
 
 // Consider this variable:
 
-// const nums = [3, 57, -9, 20, 67]
+//const nums = [3, 57, -9, 20, 67]
+
 // Create the code that will log the largest number from the array.
+var array = [3, 57, -9, 20, 67]
+var largest = 0
+
+for(i=0;i<=largest;i++){
+    if(array>largest){
+        var largest=array[i]
+    }console.log(largest);
+}
+
+// console.log(nums[4])
+
 // Create the code that will log the smallest number from the array.
+
+
+
 // Create the code that will log the remainder of each number when divided by 2. Expected output: 1, 1, -1, 0, 1
 // Consider this variable:
 
