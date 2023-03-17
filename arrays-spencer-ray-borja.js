@@ -81,3 +81,24 @@
 // let combinedCohort = cohortMembers.concat(cohortMembers2)
 // console.log(combinedCohort.sort())
 
+// Consider the variables:
+
+// var numbers = [42, 221, 71, 7, 18, 87]
+// var oddIndexes = []
+
+// Write the code that logs the values from the numbers array that are at odd indexes.
+
+// for (let i = 0; i < numbers.length; i++){
+//     if (i % 2 !== 0) {
+//         console.log("odd index, printing value:", numbers[i])
+//     }
+// }
+
+// Write the code that adds the values from odd indexes into the oddIndexes array.
+
+// for (let i = 0; i < numbers.length; i++){
+//     if (i % 2 !== 0) {
+//         oddIndexes.push(numbers[i])
+//     }
+// }
+// console.log("Odd Indexes Array: ", oddIndexes)
