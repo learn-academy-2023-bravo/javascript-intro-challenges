@@ -51,28 +51,50 @@ const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 
 
 
-
-
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+const comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
 // // output: "nicework"
 
+// pseudo:
+// create a function
+// input: an array 
+// create place holder array 
+// iteration: create for loop
+// check condition with if statement
+// check if element is a string with typeof
+// .push only each element that matches our condition
+// convert resulting array into a string
+// return: return the string
+// console.log function call to get our return
+
+    // this is one way to do it
+    // const lettersOnly = (array) => {
+    //     let workingArray = []
+
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (typeof array[i] === "string"){
+    //             workingArray.push(array[i])
+    //         }
+    //     }
+    //     return workingArray.join("")
+    // }
+ 
+    // console.log(lettersOnly(comboArr))
+
+//--------------------------------------- alternate reality time ---------------------------
+
+//this is another way to do it
+// pseudo:
+// create a function
+// input: an array 
+// create place holder string
+// iteration: create for loop
+// check condition with if statement
+// check if element is a string with typeof
+// ******* only each element that matches our condition
+// *******
+// return: return the string
+// console.log function call to get our return
 
 
 
