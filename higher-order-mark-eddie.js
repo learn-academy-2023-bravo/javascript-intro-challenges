@@ -11,7 +11,7 @@ const arr1 = [3, 9, 15, 4, 10]
 const multiplyByTen = arr1.map((value) => {
     return value * 10
 })
-console.log(multiplyByTen) // output: [ 30, 90, 150, 40, 100 ]
+// console.log(multiplyByTen) // output: [ 30, 90, 150, 40, 100 ]
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 const arr2 = [2, 7, 3, 5, 8, 10, 13]
@@ -26,7 +26,7 @@ const arr2 = [2, 7, 3, 5, 8, 10, 13]
 const onlyOdds = (array) => {
     return array.filter((numbers) => numbers % 2 !== 0)
 }
-console.log(onlyOdds(arr2)) // output: [ 7, 3, 5, 13 ]
+// console.log(onlyOdds(arr2)) // output: [ 7, 3, 5, 13 ]
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
@@ -43,7 +43,7 @@ const onlyLetters = (array) => {
     })
     return letters.join("")
 }
-console.log(onlyLetters(comboArr))
+// console.log(onlyLetters(comboArr))
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 const filterArrayValues = [58, "", "abcd", true, null, false, 0]
@@ -57,7 +57,7 @@ const selectItems = (array) => {
     let newArray = array.filter(Boolean)
     return newArray
 }
- console.log(selectItems(filterArrayValues))
+// console.log(selectItems(filterArrayValues))
 
 
 // 🏔 Stretch Goals
@@ -76,7 +76,7 @@ const noVowels = (string) => {
     let textHere = string.split("").filter((value) => !vowels.includes(value))
     return textHere.join('')
 };
-console.log(noVowels(str))
+// console.log(noVowels(str))
 
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 const arra1 = [3, 7, 10, 5, 4, 3]
@@ -97,7 +97,7 @@ const noDuplicates = (array) => {
     return mergedArrays
 }
 
-console.log(noDuplicates)
+// console.log(noDuplicates)
 
 function mergeArrays(arr1, arr2) {
      const mergedArray = arr1.concat(arr2);
@@ -107,4 +107,4 @@ function mergeArrays(arr1, arr2) {
     return uniqueArray;
   }
 const mergedArray = mergeArrays(arra1, arra2);
-console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6
+// console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6
