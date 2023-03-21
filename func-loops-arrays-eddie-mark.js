@@ -39,24 +39,39 @@ return arrayOddNumbers
 console.log(oddNumbers(testArr2))
 // // output: [-7, 3, 5, 13]
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+const comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k"
+]
 // // output: "nicework"
+
+//Create a function called lettersOnly
+//Create variable to hold string
+//Make for loop
+//Conditional statement with typeof
+
+const lettersOnly = (letters) => {
+    let textHere = ""
+    for(let i=0; i<comboArr.length; i++)
+    if (typeof letters[i] === "string") {
+     textHere.push(letters[i])
+    }
+}
+console.log(lettersOnly(comboArr))
+
 
 
 // Create a function that takes in an array of numbers and returns the sum.
