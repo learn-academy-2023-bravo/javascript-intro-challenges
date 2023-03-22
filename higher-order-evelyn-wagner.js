@@ -63,6 +63,7 @@ console.log(arrayWithout(filterArrayValues))
 const str = "javascript is awesome"
 // // output: "jvscrpt s wsm"
 
+// Regects:
 const removeVowels = str.replace(/[aeiou]/gi, '') 
 console.log(removeVowels)
 
@@ -72,4 +73,23 @@ const arr1 = [3, 7, 10, 5, 4, 3]
 const arr2 = [7, 8, 2, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
 
-console.log(Array.from(new Set(arr1.concat(arr2))))
+// Pseudo code:
+// input: 2 arrays of numbers
+// output: 1 array with no duplicates
+// combine 2 arrays
+// check if numbers are the same
+// remove the numbers that are the same
+// return the new array
+
+const combinedArray = (array1, array2) => {
+  
+  // merge two arrays:
+  let newArray = array1.concat(array2)
+  
+  // check if numbers are the same:
+  let uniqueValues = array1.filter
+    
+
+
+// Another way to get output:
+  // console.log(Array.from(new Set(arr1.concat(arr2))))
