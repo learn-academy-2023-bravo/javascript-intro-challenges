@@ -1,11 +1,11 @@
 // Write a function that takes in an array of numbers and returns a new array with all numbers multiplied by 10.
 // const arr1 = [3, 9, 15, 4, 10]
 // // output: [30, 90, 150, 40, 100]
+
 //create func multiply, .map() through the array while returning the multiplied values
 //to the new array
 // const multiply = (array) => {return array.map((value) => value * 10)}
 // console.log(multiply(arr1))
-
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 // const arr2 = [2, 7, 3, 5, 8, 10, 13]
@@ -18,6 +18,7 @@
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 // const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // output: "nicework"
+
 //create func named letters, filter through array for only string characters
 //convert new array to string and return that string
 // const letters = (array) => {return array.filter((value) => typeof value  === 'string').join('')}
@@ -26,6 +27,7 @@
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 // const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 // // output: [58, "abcd", true]
+
 //create func named filters, filter through array (removing unwanted values)
 //return the new array
 // const filters = (array) => {return array.filter((value) => value !== 0 && value!=='' && value !== null && value !== false)}
