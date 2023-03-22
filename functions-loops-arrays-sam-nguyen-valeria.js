@@ -31,28 +31,38 @@ const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 console.log(onlyOdds(testArr2))
 // // output: [-7, 3, 5, 13]
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+const comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k"
+]
+const stringArray = (array) => {
+ let lettersArray = []
+  for (i=0; i<array.length;i++){
+     if (typeof array[i]=== "string" ){
+        lettersArray.push(array[i])
+     }
+  }
+  return lettersArray.join("")
+}
+console.log (stringArray(comboArr))
 // // output: "nicework"
 // Create a function that takes in an array of numbers and returns the sum.
 // const addThese1 = [1, 2, 3, 4]
 // // output: 10
-
+// We will create a number variable , and as we move through the array we will add each value to the number variable.
 // const addThese2 = []
 // // output: 0
 // Create a function that takes in an array of numbers and returns the index of the largest number.
