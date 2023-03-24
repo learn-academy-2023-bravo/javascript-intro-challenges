@@ -78,16 +78,19 @@ const arr3 = [3, 7, 10, 5, 4, 3]
 const arr4 = [7, 8, 2, 1, 5, 4]
 // output: [3, 7, 10, 5, 4, 8, 2, 1]
 
-const combinedArrays = (array1, array2) => {
-	let combinedArr = array1
+// const combinedArrays = (array1, array2) => {
+// 	let combinedArr = array1.concat(array2)
 
-	array2.forEach((value) => {
-		if (combinedArr.includes(value)) {
-			console.log(value, 'already there')
-		} else {
-			console.log(value, 'not there')
-		}
-	})
+// 	let uniqueNums =combinedArr.filter((value, index) => {
+// 		return combinedArr.indexOf(value) === index
+// 	})
+// 	return uniqueNums
+// }
+// console.log(combinedArrays(arr3, arr4))
+
+const removeDuplicates = (array1, array2) => {
+	let combinedArr = array1.concat(array2)
+	let array = Array.from(new Set(combinedArr))
+	return array
 }
-
-console.log(combinedArrays(arr3, arr4))
+console.log(removeDuplicates(arr3, arr4))
