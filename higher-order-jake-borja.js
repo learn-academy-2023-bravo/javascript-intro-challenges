@@ -86,8 +86,6 @@ const moreFilters = [42, "asdf", false, 0, null, undefined, 12]
 
 
 
-
-
 // 🏔 Stretch Goals
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 const str = "javascript is awesome"
