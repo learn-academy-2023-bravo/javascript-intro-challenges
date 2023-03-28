@@ -13,7 +13,6 @@
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
 
-
 // const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 // // // output: [-7, 3, 5, 13]
 
@@ -23,9 +22,9 @@
 //         if (array[index] % 2 !== 0) {
 //             result.push(array[index])
 //         }
-//     } 
+//     }
 //     return result
-// } 
+// }
 // console.log(onlyOdd(testArr2))
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
@@ -54,11 +53,10 @@
 //                 if (typeof array[index] === "string") {
 //                     result.push(array[index])
 //                 }
-//             } 
+//             }
 //             return result.join("")
 // }
 // console.log(onlyStrings(comboArr))
-
 
 // Create a function that takes in an array of numbers and returns the sum.
 
@@ -83,15 +81,15 @@ const indexHighestNumber = [1, 4, 2, 3]
 // // output: 1
 
 const highestNumberIndex = (array) => {
-    let result = 0
-    for( let index = 0; index < array.length; index++) {
-        if (array[result] < array[index]) {
-            result = index
-        }
-    }
-    return result
-} 
-console.log(highestNumberIndex(indexHighestNumber))
+	let result = 0
+	for (let index = 0; index < array.length; index++) {
+		if (array[result] < array[index]) {
+			result = index
+		}
+	}
+	return result
+}
+// console.log(highestNumberIndex(indexHighestNumber))
 
 // 🏔 Stretch Goals
 // Create a function that takes in two arrays and returns one array with no duplicate values.
@@ -99,35 +97,92 @@ const arr1 = [3, 7, 10, 5, 4, 3, 3]
 const arr2 = [7, 8, 2, 3, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
 
+const removeDuplicates = (a1, a2) => {
+	let combinedArr = a1.concat(a2)
 
+	let uniqueNums = combinedArr.filter((value, index) => {
+		return combinedArr.indexOf(value) === index
+	})
+	return uniqueNums
+}
 
+// console.log(removeDuplicates(arr1, arr2))
 
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
-// const arrayLength = 6
-// const arrayValue = 0
+const arrayLength = 6
+const arrayValue = 0
 // // output: [0, 0, 0, 0, 0, 0]
+
+const fillArr = (value, length) => {
+	return new Array(length).fill(value)
+}
+
+// console.log(fillArr(arrayValue, arrayLength))
 
 // const arrayLength = 4
 // const arrayValue = 11
 // // output: [11, 11, 11, 11]
 
-
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
-// const addUp1 = 4
+const addUp1 = 4
 // // 1 + 2 + 3 + 4 = 10
 // // output: 10
 
-// const addUp2 = 10
+const addUp2 = 10
 // // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
 // // output: 55
 
-// const addUp3 = 600
+const addUp3 = 600
 // // output: 180300
 
+const addNumbersUpTo = (num) => {
+	let sum = 0
+	for (let i = 1; i <= num; i++) {
+		sum = sum + i
+	}
+	return sum
+}
 
+// console.log(addNumbersUpTo(addUp1))
+// console.log(addNumbersUpTo(addUp2))
+// console.log(addNumbersUpTo(addUp3))
 
 // 🏔 Epic Goals
 // Create a function called highLow that takes in a number and returns whether the number is higher or lower than the "answer".
+const answer = Math.floor(Math.random() * (100 - 1 + 1) + 1)
+
+const highLow = (number) => {
+	if (number > answer) {
+		return `${number} is too high`
+	} else if (number < answer) {
+		return `${number} is too low`
+	} else {
+		return 'WINNER'
+	}
+}
+
+let guess = 0
+let totalGuesses = 1
+const guessLimit = 7
+
+while (highLow(guess) !== 'WINNER') {
+	guess = prompt(
+		`Guess: [${totalGuesses} / ${guessLimit}] Guess a number between 1 and 100`
+	)
+
+	alert(highLow(guess))
+
+	totalGuesses += 1
+
+	if (totalGuesses > guessLimit && highLow(guess) !== 'WINNER') {
+		alert('You ran out of guesses')
+		break
+	}
+}
+
+// console.log(highLow(3))
+// console.log(highLow(100))
+// console.log(highLow(25))
 
 // Create an HTML page and link your JavaScript file. More info here.
 // As a user, I see a prompt or input where I can guess a number between 1 and 100 (both inclusive).
